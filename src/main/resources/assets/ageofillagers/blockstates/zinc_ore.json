@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "ageofillagers:block/zinc_ore" }
+    "": { "model": "ageofillagers:block/ore/zinc_ore" }
   }
 }

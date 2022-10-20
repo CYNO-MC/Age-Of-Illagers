@@ -6,7 +6,8 @@
   "block.ageofillagers.bronze_block": "Block of Bronze",
   "block.ageofillagers.tin_ore": "Tin Ore",
   "block.ageofillagers.zinc_ore": "Zinc Ore",
-
+  "block.ageofillagers.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.ageofillagers.deepslate_zinc_ore": "Deepslate Zinc Ore",
 
   "itemGroup.ageofillagers.aoi_main": "AoI - Main",
   "itemGroup.ageofillagers.aoi_eggs": "AoI - Spawn Eggs"

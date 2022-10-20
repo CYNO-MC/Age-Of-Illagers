@@ -7,6 +7,7 @@ import net.itscyno.ageofillagers.item.AoiItemGroups;
 import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
+import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -21,13 +22,18 @@ public class AoiBlocks {
                     .strength(8.0F, 9.0F).sounds(BlockSoundGroup.COPPER)), AoiItemGroups.AOI_MAIN);
 
     public static final Block TIN_ORE = registerBlock("tin_ore",
-            new Block(FabricBlockSettings.of(Material.STONE, MapColor.STONE_GRAY).requiresTool()
+            new OreBlock(FabricBlockSettings.of(Material.STONE, MapColor.STONE_GRAY).requiresTool()
                     .strength(2.5F, 3.5F).sounds(BlockSoundGroup.STONE)), AoiItemGroups.AOI_MAIN);
 
     public static final Block ZINC_ORE = registerBlock("zinc_ore",
-            new Block(FabricBlockSettings.of(Material.STONE, MapColor.STONE_GRAY).requiresTool()
+            new OreBlock(FabricBlockSettings.of(Material.STONE, MapColor.STONE_GRAY).requiresTool()
                     .strength(2.0F, 3.0F).sounds(BlockSoundGroup.STONE)), AoiItemGroups.AOI_MAIN);
 
+    public static final Block DEEPSLATE_ZINC_ORE = registerBlock("deepslate_zinc_ore",
+            new OreBlock(FabricBlockSettings.copy(ZINC_ORE).strength(4.0f, 5.0f)), AoiItemGroups.AOI_MAIN);
+
+    public static final Block DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore",
+            new OreBlock(FabricBlockSettings.copy(TIN_ORE).strength(5.0f, 5.5f)), AoiItemGroups.AOI_MAIN);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {

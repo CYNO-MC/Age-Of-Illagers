@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "ageofillagers:block/tin_ore" }
+    "": { "model": "ageofillagers:block/ore/tin_ore" }
   }
 }
