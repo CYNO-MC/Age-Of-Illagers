@@ -18,6 +18,9 @@ public class AoiItems {
     public static final Item BRONZE_ALLOY = registerItem("bronze_alloy",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
+    public static final Item BRASS_ALLOY = registerItem("brass_alloy",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+
     private static Item registerItem (String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(AoiMain.MOD_ID, name), item);
     }

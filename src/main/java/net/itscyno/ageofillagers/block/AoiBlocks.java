@@ -16,8 +16,9 @@ import net.minecraft.util.registry.Registry;
 public class AoiBlocks {
 
     public static final Block BRONZE_BLOCK = registerBlock("bronze_block",
-            new Block(FabricBlockSettings.of(Material.METAL, MapColor.TERRACOTTA_ORANGE).requiresTool().strength(8.0F, 9.0F)
-                    .sounds(BlockSoundGroup.COPPER)), ItemGroup.MISC);
+            new Block(FabricBlockSettings.of(Material.METAL, MapColor.PALE_YELLOW).requiresTool()
+                    .strength(8.0F, 9.0F).sounds(BlockSoundGroup.COPPER)), ItemGroup.MISC);
+
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
