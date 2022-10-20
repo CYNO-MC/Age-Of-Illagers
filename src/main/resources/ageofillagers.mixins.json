@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "AoIMixin"
+    "AoiMixin"
   ],
   "injectors": {
     "defaultRequire": 1

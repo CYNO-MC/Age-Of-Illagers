@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.itscyno.ageofillagers.AoIMain"
+      "net.itscyno.ageofillagers.AoiMain"
     ]
   },
   "mixins": [
