@@ -12,6 +12,9 @@ public class AoiItems {
     public static final Item RAW_TIN = registerItem("raw_tin",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
+    public static final Item RAW_ZINC = registerItem("raw_zinc",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+
     private static Item registerItem (String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(AoiMain.MOD_ID, name), item);
     }
