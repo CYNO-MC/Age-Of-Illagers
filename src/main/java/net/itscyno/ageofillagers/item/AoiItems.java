@@ -10,16 +10,16 @@ import net.minecraft.util.registry.Registry;
 public class AoiItems {
 
     public static final Item RAW_TIN = registerItem("raw_tin",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(AoiItemGroups.AOI_MAIN)));
 
     public static final Item RAW_ZINC = registerItem("raw_zinc",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(AoiItemGroups.AOI_MAIN)));
 
     public static final Item BRONZE_ALLOY = registerItem("bronze_alloy",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(AoiItemGroups.AOI_MAIN)));
 
     public static final Item BRASS_ALLOY = registerItem("brass_alloy",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(AoiItemGroups.AOI_MAIN)));
 
     private static Item registerItem (String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(AoiMain.MOD_ID, name), item);

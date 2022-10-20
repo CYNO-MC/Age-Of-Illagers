@@ -2,5 +2,12 @@
   "item.ageofillagers.raw_tin": "Raw Tin",
   "item.ageofillagers.raw_zinc": "Raw Zinc",
   "item.ageofillagers.bronze_alloy": "Bronze Alloy",
-  "block.ageofillagers.bronze_block": "Block of Bronze"
+  "item.ageofillagers.brass_alloy": "Brass Alloy",
+  "block.ageofillagers.bronze_block": "Block of Bronze",
+  "block.ageofillagers.tin_ore": "Tin Ore",
+  "block.ageofillagers.zinc_ore": "Zinc Ore",
+
+
+  "itemGroup.ageofillagers.aoi_main": "AoI - Main",
+  "itemGroup.ageofillagers.aoi_eggs": "AoI - Spawn Eggs"
 }
