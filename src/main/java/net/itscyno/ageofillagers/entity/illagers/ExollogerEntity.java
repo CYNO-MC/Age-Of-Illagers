@@ -31,8 +31,7 @@ import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 public class ExollogerEntity extends IllagerEntity implements IAnimatable, IAnimationTickable {
     private final SimpleInventory inventory = new SimpleInventory(5);
-    private AnimationFactory factory = new AnimationFactory(this);
-    private boolean isAttack = this.isAttacking();
+    private final AnimationFactory factory = new AnimationFactory(this);
 
     public ExollogerEntity(EntityType<? extends IllagerEntity> entityType, World world) {
         super(entityType, world);
