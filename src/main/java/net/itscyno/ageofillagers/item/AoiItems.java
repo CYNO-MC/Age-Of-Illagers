@@ -3,6 +3,7 @@ package net.itscyno.ageofillagers.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.itscyno.ageofillagers.AoiMain;
 import net.itscyno.ageofillagers.entity.AoiEntities;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Identifier;
@@ -25,6 +26,12 @@ public class AoiItems {
     public static final Item SPAWN_EGG_EXOLLOGER = registerItem("spawn_egg_exolloger",
             new SpawnEggItem(AoiEntities.EXOLLOGER,0x305158, 0xba8363,
                     new FabricItemSettings().group(AoiItemGroups.AOI_EGGS)));
+
+    public static final Item SPAWN_EGG_ILLUSIONER = registerItem("spawn_egg_illusioner",
+            new SpawnEggItem(EntityType.ILLUSIONER,0x356895, 0x20635a,
+                    new FabricItemSettings().group(AoiItemGroups.AOI_EGGS)));
+
+
 
     private static Item registerItem (String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(AoiMain.MOD_ID, name), item);

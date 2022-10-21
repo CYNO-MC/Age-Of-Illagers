@@ -16,6 +16,5 @@ public class AoiMain implements ModInitializer {
 		AoiItems.registerAoiItems();
 		AoiBlocks.registerAoiBlocks();
 		AoiRegistries.registerAttributes();
-
 	}
 }

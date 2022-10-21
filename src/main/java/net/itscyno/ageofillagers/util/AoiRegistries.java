@@ -5,8 +5,6 @@ import net.itscyno.ageofillagers.entity.AoiEntities;
 import net.itscyno.ageofillagers.entity.illagers.ExollogerEntity;
 
 public class AoiRegistries {
-
-
         public static void registerAttributes() {
             attributeRegistry();
         }

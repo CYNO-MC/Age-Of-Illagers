@@ -32,6 +32,7 @@ import software.bernie.geckolib3.core.manager.AnimationFactory;
 public class ExollogerEntity extends IllagerEntity implements IAnimatable, IAnimationTickable {
     private final SimpleInventory inventory = new SimpleInventory(5);
     private AnimationFactory factory = new AnimationFactory(this);
+    private boolean isAttack = this.isAttacking();
 
     public ExollogerEntity(EntityType<? extends IllagerEntity> entityType, World world) {
         super(entityType, world);
@@ -42,7 +43,7 @@ public class ExollogerEntity extends IllagerEntity implements IAnimatable, IAnim
         super.initGoals();
         this.goalSelector.add(0, new SwimGoal(this));
         this.goalSelector.add(2, new PatrolApproachGoal(this, 10.0F));
-        this.goalSelector.add(3, new CrossbowAttackGoal(this, 1.0D, 8.0F));
+        this.goalSelector.add(3, new AttackGoal(this));
         this.goalSelector.add(8, new WanderAroundGoal(this, 0.6D));
         this.goalSelector.add(9, new LookAtEntityGoal(this, PlayerEntity.class, 15.0F, 1.0F));
         this.goalSelector.add(10, new LookAtEntityGoal(this, MobEntity.class, 15.0F));
@@ -54,10 +55,11 @@ public class ExollogerEntity extends IllagerEntity implements IAnimatable, IAnim
 
     public static DefaultAttributeContainer.Builder setAttributes() {
         return HostileEntity.createHostileAttributes()
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3499999940395355D)
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 24.0D)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 5.0D)
-                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 32.0D);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2499999940395355D)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 50.0D)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 10.0D)
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 32.0D)
+                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 0.8D);
     }
 
     @Override
@@ -108,6 +110,7 @@ public class ExollogerEntity extends IllagerEntity implements IAnimatable, IAnim
         }
         if (this.isAttacking()) {
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.exolloger.attack_low", false));
+            return PlayState.CONTINUE;
         }
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.exolloger.idle", true));
             return PlayState.CONTINUE;

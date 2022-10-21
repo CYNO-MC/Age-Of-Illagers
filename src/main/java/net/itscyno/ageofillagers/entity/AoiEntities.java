@@ -14,6 +14,6 @@ public class AoiEntities {
     public static final EntityType<ExollogerEntity> EXOLLOGER = Registry.register(
             Registry.ENTITY_TYPE, new Identifier(AoiMain.MOD_ID, "exolloger"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, ExollogerEntity::new)
-                    .dimensions(EntityDimensions.fixed(2.0f, 2.8f)).build());
+                    .dimensions(EntityDimensions.fixed(1.2f, 2.8f)).build());
 
 }
