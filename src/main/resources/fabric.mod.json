@@ -8,6 +8,7 @@
   "authors": [
     "Its_Cyno"
   ],
+
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/CYNO-MC/Age-Of-Illagers"
@@ -20,8 +21,12 @@
   "entrypoints": {
     "main": [
       "net.itscyno.ageofillagers.AoiMain"
+    ],
+    "client": [
+      "net.itscyno.ageofillagers.AoiClient"
     ]
   },
+
   "mixins": [
     "ageofillagers.mixins.json"
   ],

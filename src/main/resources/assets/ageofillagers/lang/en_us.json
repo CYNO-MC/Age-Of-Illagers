@@ -9,6 +9,9 @@
   "block.ageofillagers.deepslate_tin_ore": "Deepslate Tin Ore",
   "block.ageofillagers.deepslate_zinc_ore": "Deepslate Zinc Ore",
 
+  "entity.ageofillagers.exolloger": "Exolloger",
+  "item.ageofillagers.spawn_egg_exolloger": "Exolloger Spawn Egg",
+
   "itemGroup.ageofillagers.aoi_main": "AoI - Main",
   "itemGroup.ageofillagers.aoi_eggs": "AoI - Spawn Eggs"
 }
